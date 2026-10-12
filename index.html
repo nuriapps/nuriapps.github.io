@@ -25,7 +25,7 @@
         }
 
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 40px 20px;
         }
@@ -38,6 +38,30 @@
             box-shadow: 0 3px 12px rgba(0,0,0,0.1);
         }
 
+        .app-banner {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .play-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #1565c0;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .play-link:hover {
+            background: #0d47a1;
+        }
+
         footer {
             margin-top: 50px;
             padding: 25px;
@@ -45,46 +69,49 @@
         }
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Nuri Apps</h1>
-    <p>Useful apps made simple.</p>
-</header>
+    <header>
+        <h1>Nuri Apps</h1>
+        <p>Useful apps made simple.</p>
+    </header>
 
-<main>
+    <main>
+        <h2>Our Apps</h2>
 
-    <h2>Our Apps</h2>
+        <div class="card">
+            <img src="mathegraph-banner.png" alt="MatheGraph preview" class="app-banner">
+            <h2>MatheGraph</h2>
+            <p>
+                A mathematics app for visualizing functions, graphs and mathematical calculations.
+            </p>
+            <p>
+                <a href="https://play.google.com/store/apps/details?id=com.nuri.kurvendiskussion" class="play-link">
+                    View MatheGraph on Google Play
+                </a>
+            </p>
+        </div>
 
-    <div class="card">
-        <h2>MatheGraph</h2>
-        <p>
-            A mathematics app for visualizing functions,
-            graphs and mathematical calculations.
-        </p>
-    </div>
+        <div class="card">
+            <img src="soundwatch-banner.png" alt="Sound Watch preview" class="app-banner">
+            <h2>Sound Watch</h2>
+            <p>
+                Sound Watch monitors the ambient noise level and lets you define individual
+                warning thresholds. When a threshold is exceeded, the app can react with your
+                own recordings or sound effects. Ideal for creating a calmer environment during
+                sleep and rest periods.
+            </p>
+            <p>
+                <a href="https://play.google.com/store/apps/details?id=com.nuriapps.shhhbequiet" class="play-link">
+                    View Sound Watch on Google Play
+                </a>
+            </p>
+        </div>
+    </main>
 
-<div class="card">
-    <h2>Sound Watch</h2>
-    <p>
-        Sound Watch monitors the ambient noise level and lets you define
-        individual warning thresholds. When a threshold is exceeded,
-        the app can react with your own recordings or sound effects.
-        Ideal for creating a calmer environment during sleep and rest periods.
-    </p>
-    <p>
-        <a href="https://play.google.com/store/apps/details?id=com.nuriapps.shhhbequiet">
-            View Sound Watch on Google Play
-        </a>
-    </p>
-</div>
-
-</main>
-
-<footer>
-    © 2026 Nuri Apps
-</footer>
+    <footer>
+        © 2026 Nuri Apps
+    </footer>
 
 </body>
 </html>
